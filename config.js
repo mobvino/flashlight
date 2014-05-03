@@ -67,7 +67,7 @@ exports.paths = [
       index: "firebase",
       type:  "message",
       fields: ['msg', 'name'],
-      filter: function(data) { return data.name !== 'system'; }
+      filter: function(data, snap) { return data.name !== 'system'; }
    }
 ];
 
